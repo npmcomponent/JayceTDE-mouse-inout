@@ -51,11 +51,9 @@ exports.bind = function (el, type, fn, capture) {
 		
 		e = e || window.event;
 
-		var target = e.target || e.srcElement
-			, related = e.relatedTarget || e[rel]
-		;
+		var related = e.relatedTarget || e[rel];
 
-		if (target === el && (!related || (related !== target && !contains(target, related)))) {
+		if (!related || (related !== el && !contains(el, related))) {
 			fn.apply(this, arguments);
 		}
 
