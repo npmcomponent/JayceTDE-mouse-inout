@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+#container {
+	margin: 20px;
+	padding:20px;
+	background: grey;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="container">
+	<div>Text in a div</div>
+	<div><div><div>and some nested divs</div></div></div>
+	and more text
+</div>
+
+<div id="log"></div>
+
+<script src="build/build.js"></script>
+<script>
+
+var comengo = require('comengo')
+	, el = document.querySelector('#container')
+	, log = document.querySelector('#log')
+;
+
+comengo.bind(el, 'mouseenter', function (e) {
+
+	var m = document.createElement('div');
+	m.innerHTML = 'Mouse Enter';
+
+	log.appendChild(m);
+
+});
+
+comengo.bind(el, 'mouseleave', function (e) {
+	
+	var m = document.createElement('div');
+	m.innerHTML = 'Mouse Leave';
+
+	log.appendChild(m);
+
+});
+
+</script>
+
+</body>
+</html>

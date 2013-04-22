@@ -1,0 +1,16 @@
+{
+  "name": "comengo",
+  "repo": "JayceTDE/comengo",
+  "description": "Mouseenter and mouseleave events",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/event": "*",
+    "jb55/domready": "*"
+  },
+  "development": {},
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
