@@ -7,7 +7,7 @@
   "dependencies": {
     "component/event": "*",
     "jb55/domready": "*",
-    "JayceTDE/DOM-contains": "*"
+    "JayceTDE/dom-contains": "*"
   },
   "development": {},
   "scripts": [

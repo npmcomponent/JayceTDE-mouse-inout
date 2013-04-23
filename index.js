@@ -2,7 +2,7 @@
 
 var events = require('event')
 	, domready = require('domready')
-	, contains = require('DOM-contains')
+	, contains = require('dom-contains')
 	, docElement = document.documentElement
 	, eventMap = {
 			mouseenter: 'mouseover'
