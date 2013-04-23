@@ -2,36 +2,13 @@
 
 var events = require('event')
 	, domready = require('domready')
+	, contains = require('DOM-contains')
 	, docElement = document.documentElement
 	, eventMap = {
 			mouseenter: 'mouseover'
 		, mouseleave: 'mouseout'
 	}
 	, handlerMap = {}
-;
-
-var contains = /\[native code\]/.test(docElement.contains.toString()) || docElement.compareDocumentPosition ?
-	function (a, b) {
-		var adown = a.nodeType === 9 ? a.documentElement : a
-			, bup = b && b.parentNode
-		;
-
-		return a === bup || !!(bup && bup.nodeType === 1 && (
-				adown.contains ?
-					adown.contains(bup) :
-					a.compareDocumentPosition && a.compareDocumentPosition(bup) & 16
-			));
-	} :
-	function (a, b) {
-		if (b) {
-			while ((b = b.parentNode)) {
-				if (b === a) {
-					return true;
-				}
-			}
-		}
-		return false;
-	}
 ;
 
 exports.bind = function (el, type, fn, capture) {

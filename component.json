@@ -6,7 +6,8 @@
   "keywords": [],
   "dependencies": {
     "component/event": "*",
-    "jb55/domready": "*"
+    "jb55/domready": "*",
+    "JayceTDE/DOM-contains": "*"
   },
   "development": {},
   "scripts": [
