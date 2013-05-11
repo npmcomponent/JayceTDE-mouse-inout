@@ -26,12 +26,12 @@
 <script src="build/build.js"></script>
 <script>
 
-var comengo = require('comengo')
+var mouseInOut = require('mouse-inout')
 	, el = document.querySelector('#container')
 	, log = document.querySelector('#log')
 ;
 
-comengo.bind(el, 'mouseenter', function (e) {
+mouseInOut.bind(el, 'mouseenter', function (e) {
 
 	var m = document.createElement('div');
 	m.innerHTML = 'Mouse Enter';
@@ -40,8 +40,8 @@ comengo.bind(el, 'mouseenter', function (e) {
 
 });
 
-comengo.bind(el, 'mouseleave', function (e) {
-	
+mouseInOut.bind(el, 'mouseleave', function (e) {
+
 	var m = document.createElement('div');
 	m.innerHTML = 'Mouse Leave';
 

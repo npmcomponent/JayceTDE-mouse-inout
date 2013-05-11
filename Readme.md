@@ -1,22 +1,22 @@
 
-# comengo (Come-n-go)
+# Mouse-InOut
 
   mouseenter and mouseleave events on top of component/event
 
 ## Installation
 
-    $ component install JayceTDE/comengo
+    $ component install JayceTDE/mouse-inout
 
 ## API
 
 ```javascript
-var comengo = require('comengo');
+var mouseInOut = require('mouse-inout');
 
-comengo.bind(el, 'mouseenter', function (e) {
+mouseInOut.bind(el, 'mouseenter', function (e) {
   console.log('mouseenter');
 });
 
-comengo.bind(el, 'mouseleave', function (e) {
+mouseInOut.bind(el, 'mouseleave', function (e) {
   console.log('mouseleave');
 });
 ```

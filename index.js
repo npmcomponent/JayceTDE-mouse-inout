@@ -5,7 +5,7 @@ var events = require('event')
 	, contains = require('dom-contains')
 	, docElement = document.documentElement
 	, eventMap = {
-			mouseenter: 'mouseover'
+		  mouseenter: 'mouseover'
 		, mouseleave: 'mouseout'
 	}
 	, handlerMap = {}
@@ -25,7 +25,7 @@ exports.bind = function (el, type, fn, capture) {
 	}
 
 	handler = function (e) {
-		
+
 		e = e || window.event;
 
 		var related = e.relatedTarget || e[rel];
