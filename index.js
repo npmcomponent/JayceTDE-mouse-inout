@@ -1,8 +1,8 @@
 'use strict';
 
-var events = require('event')
-	, domready = require('domready')
-	, contains = require('dom-contains')
+var events = require('component-event')
+	, domready = require('jb55-domready')
+	, contains = require('JayceTDE-dom-contains')
 	, docElement = document.documentElement
 	, eventMap = {
 		  mouseenter: 'mouseover'

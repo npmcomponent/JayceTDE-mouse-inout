@@ -1,0 +1,12 @@
+{
+  "name": "jaycetde-mouse-inout",
+  "description": "Mouseenter and mouseleave events",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component-event": "git://github.com/npmcomponent/component-event.git",
+    "jb55-domready": "git://github.com/npmcomponent/jb55-domready.git",
+    "JayceTDE-dom-contains": "git://github.com/npmcomponent/JayceTDE-dom-contains.git"
+  },
+  "license": "MIT"
+}
